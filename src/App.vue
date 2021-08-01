@@ -1,22 +1,16 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
   <router-view />
 </template>
-
+<script>
+export default {
+  mounted() {
+    this.$router.push("/home/tab_1");
+  },
+};
+</script>
 <style lang="sass">
-#app
-  text-align: center
-
-#nav
-  padding: 30px
-
-  // a
-  //   font-weight: bold
-  //   color: #2c3e50
-
-  //   &.router-link-exact-active
-  //     color: #42b983
+html, body, #app
+  width: 100%
+  height: 100%
+  margin: 0
 </style>
