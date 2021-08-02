@@ -2,11 +2,7 @@
   <router-view />
 </template>
 <script>
-export default {
-  mounted() {
-    this.$router.push("/home/tab_1");
-  },
-};
+export default {};
 </script>
 <style lang="sass">
 html, body, #app

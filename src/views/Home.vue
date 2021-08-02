@@ -24,10 +24,6 @@ export default defineComponent({
           path: "tab_1",
         },
         {
-          label: "Tab 2",
-          path: "tab_2",
-        },
-        {
           label: "Tab 3",
           path: "tab_3",
         },
