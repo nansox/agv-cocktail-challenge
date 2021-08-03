@@ -11,7 +11,7 @@ export interface HotelDealsState {
 
 const state: HotelDealsState = {
   hotelName: "Mieres del Camín Apartamentos",
-  hotelAssessment: 5,
+  hotelAssessment: 4,
   hotelDeals: [
     {
       title: "Solo Alojamiento",

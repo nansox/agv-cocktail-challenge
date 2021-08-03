@@ -6,7 +6,11 @@
         v-for="(dealItem, index) in items"
         :key="`hotel-deal-card-list_li_${index}`"
       >
-        <hotel-deal-card :item="dealItem" />
+        <hotel-deal-card
+          :item="dealItem"
+          :value="dealTitleSelected"
+          @selected="(value) => (dealTitleSelected = value)"
+        />
       </li>
     </ul>
   </scrollable>
@@ -20,6 +24,11 @@ import Scrollable from "@/layouts/scrollable.vue";
 
 export default defineComponent({
   name: "hotel-deal-card-list",
+  data() {
+    return {
+      dealTitleSelected: "",
+    };
+  },
   props: {
     items: {
       type: Object as () => HotelDealItem[],
@@ -30,21 +39,26 @@ export default defineComponent({
 </script>
 <style lang="sass" scoped>
 .hotel-deal-card-list
-    width: 100%
-    flex-grow: 1
+  width: 100%
+  flex-grow: 1
 
-    .hotel-deal-card-list_ul
-        margin: 0
-        padding: 0
-        display: flex
-        flex-wrap: wrap
-        list-style-type: none
-        justify-content: space-around
+  .hotel-deal-card-list_ul
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+    justify-content: space-around
 
-        .hotel-deal-card-list_li
-            margin: 8px .3%
-            height: $hotel-deal-card-height
-            width: $hotel-deal-card-width
-            display: flex
-            align-self: stretch
+    .hotel-deal-card-list_li
+      margin: 8px .3%
+      height: $hotel-deal-card-height
+      width: $hotel-deal-card-width
+      display: flex
+      align-self: stretch
+
+      @media (max-width: 470px)
+        width: 95%
+        margin: 8px 0
+        height: fit-content
 </style>

@@ -35,11 +35,14 @@ export default defineComponent({
 </script>
 <style lang="sass" scoped>
 .home
-  padding: 0 $lateral-padding-home-view
+  padding: 0
   display: flex
   flex-direction: column
   align-self: stretch
   height: 100%
-  background-color: $background-home-view
+  background-color: #FAFAFA
   overflow: hidden
+
+  @media (min-width: 768px)
+    padding: 0 $lateral-padding-home-view
 </style>
