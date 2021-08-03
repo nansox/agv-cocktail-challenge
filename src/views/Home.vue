@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <main class="home">
     <home-header :items="navItems" />
     <router-view />
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -41,5 +41,6 @@ export default defineComponent({
   align-self: stretch
   height: 100%
   background-color: $background-home-view
+  overflow: hidden
 </style>
 

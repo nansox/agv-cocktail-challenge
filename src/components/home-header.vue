@@ -63,7 +63,9 @@ export default defineComponent({
 nav
   filter: drop-shadow(0px 1px 2px rgba(80, 92, 119, 0.2))
   background-color: $white
-  height: 47px
+  height: $home-header-height
+  max-height: $home-header-height
+  flex-shrink: 0
   ul
     height: 100%
     display: flex
