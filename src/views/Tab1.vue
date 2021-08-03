@@ -1,4 +1,3 @@
-
 <template>
   <div class="tab-1">
     <!-- <h1>{{ dealsList }}</h1> -->

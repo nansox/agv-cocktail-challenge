@@ -43,4 +43,3 @@ export default defineComponent({
   background-color: $background-home-view
   overflow: hidden
 </style>
-
