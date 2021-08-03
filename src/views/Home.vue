@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <main class="home">
     <home-header :items="navItems" />
     <router-view />
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
@@ -35,11 +35,14 @@ export default defineComponent({
 </script>
 <style lang="sass" scoped>
 .home
-  padding: 0 $lateral-padding-home-view
+  padding: 0
   display: flex
   flex-direction: column
   align-self: stretch
   height: 100%
-  background-color: $background-home-view
-</style>
+  background-color: #FAFAFA
+  overflow: hidden
 
+  @media (min-width: 768px)
+    padding: 0 $lateral-padding-home-view
+</style>

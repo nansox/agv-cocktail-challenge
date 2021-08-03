@@ -9,6 +9,10 @@ body
     font-weight: $font-weight-normal
     color: $primary-dark
 
+    h1, h2, h3, h4, h5
+        font-weight: $font-weight-normal
+        color: $primary-dark
+
     // Roboto Slab Regular/Bold 24px/30px
     h1
         font-family: $roboto-slab
@@ -64,9 +68,12 @@ body
 
     // Roboto Regular 15px/25px
     li
-        color: $primary-light
+        color: #9DA2A9
         font-size: $font-size-m
         line-height: $line-height-xl
+
+        & > *
+            color: $primary-dark
 
     //Roboto Slab Regular 16px/14px
     nav

@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
         name: "Tab 3",
         component: Tab3,
       },
-    ]
+    ],
   },
 ];
 
