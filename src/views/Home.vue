@@ -42,7 +42,9 @@ export default defineComponent({
   height: 100%
   background-color: #FAFAFA
   overflow: hidden
+  .home-header
+    margin-bottom: 1px
 
   @media (min-width: 768px)
-    padding: 0 $lateral-padding-home-view
+    padding: 0 40px
 </style>

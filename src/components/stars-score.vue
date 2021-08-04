@@ -31,6 +31,6 @@ export default defineComponent({
     display: flex
     margin: 0 2.5px
 
-    .unmarked-star > svg
+    &.unmarked-star > svg
       opacity: 0
 </style>

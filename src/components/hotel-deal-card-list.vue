@@ -51,11 +51,14 @@ export default defineComponent({
     justify-content: space-around
 
     .hotel-deal-card-list_li
-      margin: 8px .3%
-      height: $hotel-deal-card-height
-      width: $hotel-deal-card-width
+      margin: 8px
+      height: 490px
+      width: 225px
       display: flex
       align-self: stretch
+
+      @media(min-width: 1600px)
+        width: 280px
 
       @media (max-width: 470px)
         width: 95%

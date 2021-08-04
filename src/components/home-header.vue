@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="home-header">
     <ul>
       <li
         @click="
@@ -60,11 +60,11 @@ export default defineComponent({
 });
 </script>
 <style lang="sass" scoped>
-nav
+.home-header
   filter: drop-shadow(0px 1px 2px rgba(80, 92, 119, 0.2))
   background-color: $white
-  height: $home-header-height
-  max-height: $home-header-height
+  height: 47px
+  max-height: 47px
   flex-shrink: 0
   ul
     height: 100%
