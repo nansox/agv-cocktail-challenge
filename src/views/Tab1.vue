@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-1">
+  <section class="tab-1">
     <header class="tab-1_header">
       <h1>
         {{ $t("tab1.hotel") }} <b>{{ hotelName }}</b>
@@ -7,7 +7,7 @@
       <stars-score :score="hotelAssessment" :maxScore="5" />
     </header>
     <hotel-deal-card-list :items="hotelDealsList" />
-  </div>
+  </section>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";

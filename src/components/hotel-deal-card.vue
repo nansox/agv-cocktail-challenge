@@ -78,7 +78,7 @@ export default defineComponent({
 .hotel-deal-card
   border: 1px solid #C9E3F9
   border-radius: 2px
-  padding: $hotel-deal-card-padding
+  padding: 10px
   display: flex
   flex-direction: column
   background-color: $white
@@ -91,7 +91,7 @@ export default defineComponent({
   .hotel-deal-card_header_line
     width: 72px
     height: 1px
-    background-color: $hotel-deal-card-header-line-color
+    background-color: #C9E3F9
     border: 0
     margin-bottom: 10px
     flex-shrink: 0
